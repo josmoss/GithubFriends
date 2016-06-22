@@ -36,18 +36,6 @@ class APIController: NSObject {
                     
                     self.delegate?.passDictionary(jsonDictionary)
                     
-                    let theFriend = Friend(dict: jsonDictionary)
-                    
-                    print(theFriend.username)
-                    print(theFriend.githubID)
-                    print(theFriend.avatarURL)
-                    print(theFriend.email)
-                    print(theFriend.publicRepos)
-                    print(theFriend.publicGists)
-                    print(theFriend.followers)
-                    print(theFriend.following)
-                    print(theFriend.createdAt)
-                    
                 } else {
                     print("Could not get root level dictionary")
                 }

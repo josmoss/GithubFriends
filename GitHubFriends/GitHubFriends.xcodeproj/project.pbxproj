@@ -62,8 +62,9 @@
 			children = (
 				D887B3811D19CC7900366BE6 /* AppDelegate.swift */,
 				D887B39A1D19DDA800366BE6 /* Constants.swift */,
-				D887B3991D19DD8D00366BE6 /* Models */,
 				D887B3851D19CC7900366BE6 /* Main.storyboard */,
+				D887B39E1D1A438500366BE6 /* Views */,
+				D887B3991D19DD8D00366BE6 /* Models */,
 				D887B3931D19CCF000366BE6 /* Controllers */,
 				D887B3941D19CD1000366BE6 /* Misc Files */,
 			);
@@ -95,6 +96,13 @@
 				D887B3971D19DB6300366BE6 /* Friend.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		D887B39E1D1A438500366BE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +330,7 @@
 				D887B3921D19CC7900366BE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
