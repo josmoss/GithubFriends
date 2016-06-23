@@ -17,6 +17,7 @@ class APIController: NSObject {
     func fetchGithubUser(username: String) {
         
         let urlString = "https://api.github.com/users/\(username)"
+        
         print(urlString)
         
         if let url = NSURL(string: urlString) {
@@ -31,10 +32,15 @@ class APIController: NSObject {
                 
                 if let jsonDictionary = self.parseJSON(data) {
                     
-                    print("I am in the APIController")
-                    print(jsonDictionary)
+//                    print("I am in the APIController")
+//                    
+//                    print(jsonDictionary)
                     
-                    self.delegate?.passDictionary(jsonDictionary)
+                    let theFriend = Friend(dict: jsonDictionary)
+                    
+//                    print(theFriend.username)
+                    
+                    self.delegate?.passGithubFriend(theFriend)
                     
                 } else {
                     print("Could not get root level dictionary")
